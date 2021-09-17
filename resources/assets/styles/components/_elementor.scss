@@ -93,6 +93,8 @@ section.equal-height div.elementor-widget-wrap > div {
 .elementor-widget-heading.angled-edge {
     .elementor-widget-container {
         background-color: #ED3A00;
+        display: inline-block;
+        position: relative;
         z-index: 1;
         &:after {
             content: '';
