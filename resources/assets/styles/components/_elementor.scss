@@ -38,20 +38,27 @@ section.equal-height div.elementor-widget-wrap > div {
     a.elementor-cta:hover {
         text-decoration: none;
     }
-    &.img-border {
-        .elementor-cta__bg-wrapper {
-            border: solid 3px #ffffff;
-        }
-    }
-    &.heading-border {
-        .elementor-cta__content {
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            h2 {
-                padding: 30px;
-                border: solid 3px rgba( #ffffff, 0.4);
+    &.ribbon {
+        h2 {
+            background-color: #ED3A00;
+            margin-left: -20px;
+            padding-left: 20px;
+            width: 95%;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: '';
+                display: inline-block;
+                height: 100%;
+                width: 60px;
+                background-color: #ED3A00;
+                position: absolute;
+                top: 0;
+                right: -17px;
+                transform: skewX(45deg);
+                z-index: -1;
             }
+
         }
     }
     &.bottom-gradient {
@@ -64,19 +71,19 @@ section.equal-height div.elementor-widget-wrap > div {
                 bottom: 0;
                 background: #3a3a3a;
                 background: linear-gradient(0deg,
-                    hsl(0, 0%, 20%) 0%,
-                    hsla(0, 0%, 20%, 0.738) 19%,
-                    hsla(0, 0%, 20%, 0.541) 34%,
-                    hsla(0, 0%, 20%, 0.382) 47%,
-                    hsla(0, 0%, 20%, 0.278) 56.5%,
-                    hsla(0, 0%, 20%, 0.194) 65%,
-                    hsla(0, 0%, 20%, 0.126) 73%,
-                    hsla(0, 0%, 20%, 0.075) 80.2%,
-                    hsla(0, 0%, 20%, 0.042) 86.1%,
-                    hsla(0, 0%, 20%, 0.021) 91%,
-                    hsla(0, 0%, 20%, 0.008) 95.2%,
-                    hsla(0, 0%, 20%, 0.002) 98.2%,
-                    hsla(0, 0%, 20%, 0) 100%
+                    hsl(0, 0%, 0%) 0%,
+                    hsla(0, 0%, 0%, 0.738) 19%,
+                    hsla(0, 0%, 0%, 0.541) 34%,
+                    hsla(0, 0%, 0%, 0.382) 47%,
+                    hsla(0, 0%, 0%, 0.278) 56.5%,
+                    hsla(0, 0%, 0%, 0.194) 65%,
+                    hsla(0, 0%, 0%, 0.126) 73%,
+                    hsla(0, 0%, 0%, 0.075) 80.2%,
+                    hsla(0, 0%, 0%, 0.042) 86.1%,
+                    hsla(0, 0%, 0%, 0.021) 91%,
+                    hsla(0, 0%, 0%, 0.008) 95.2%,
+                    hsla(0, 0%, 0%, 0.002) 98.2%,
+                    hsla(0, 0%, 0%, 0) 100%
                   );
                 z-index: 2;
             }
