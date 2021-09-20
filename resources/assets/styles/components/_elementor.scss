@@ -43,7 +43,8 @@ section.equal-height div.elementor-widget-wrap > div {
             background-color: #ED3A00;
             margin-left: -20px;
             padding-left: 20px;
-            width: 95%;
+            padding: 8px 0 8px 20px;
+            width: 91%;
             position: relative;
             z-index: 1;
             &:after {
@@ -54,7 +55,7 @@ section.equal-height div.elementor-widget-wrap > div {
                 background-color: #ED3A00;
                 position: absolute;
                 top: 0;
-                right: -17px;
+                right: -26px;
                 transform: skewX(45deg);
                 z-index: -1;
             }
