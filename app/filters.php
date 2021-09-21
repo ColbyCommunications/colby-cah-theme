@@ -148,7 +148,7 @@ add_action( 'customize_register', function ( $wp_customize ) {
  * @param array $items Nav items.
  * @param array $args  Arguments.
  */
-function add_search_box( $items, $args ) {
+add_filter( 'wp_nav_menu_items', function ( $items, $args ) {
     if ( 'primary' === $args->menu ) {
         $search = '<li class="menu-item menu-item-no-children icon-search search-item">'
                     . '<a href="#" class="search-toggle"><span class="screen-reader-text">Search</span></a>'
@@ -164,7 +164,5 @@ function add_search_box( $items, $args ) {
                     . '</li>';
         $items  = $search . $items;
     }
-
     return $items;
-}
-add_filter( 'wp_nav_menu_items', 'add_search_box', 10, 2 );
+}, 10, 2 );
