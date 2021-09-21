@@ -30,11 +30,11 @@ const routes = new Router({
 jQuery(document).ready(() => routes.loadEvents());
 
 
-jQuery( document ).ready( function($) {
-    $('.search-toggle').on('click', function(e) {
-        e.preventDefault();
-        $(this).parent().find('.header-search').toggleClass('search-open');
-        $('.header-search .search-field').focus();
-    });
-});
+// jQuery( document ).ready( function($) {
+//     $('.search-toggle').on('click', function(e) {
+//         e.preventDefault();
+//         $(this).parent().find('.header-search').toggleClass('search-open');
+//         $('.header-search .search-field').focus();
+//     });
+// });
     
