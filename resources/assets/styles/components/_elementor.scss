@@ -96,6 +96,15 @@ section.equal-height div.elementor-widget-wrap > div {
     ul li a:hover {
         text-decoration: none;
     }
+    &.align-top {
+        .elementor-icon-list-item a,
+        .elementor-icon-list-item {
+            align-items: flex-start;
+            .elementor-icon-list-icon i {
+                line-height: 1.5em;
+            }
+        }
+    }
 }
 
 .elementor-widget-heading.angled-edge {
