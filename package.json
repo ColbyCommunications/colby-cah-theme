@@ -17,11 +17,11 @@
     "devDependencies": {
         "@roots/bud": "5.7.6",
         "@roots/bud-tailwindcss": "5.7.6",
+        "@roots/bud-sass": "5.7.7",
         "@roots/sage": "5.7.6"
     },
     "dependencies": {
-        "@roots/bud-sass": "^5.7.7",
-        "@roots/bud-vue": "^5.7.7",
+        "@roots/bud-vue": "5.7.7",
         "pinia": "^2.0.13",
         "vue": "^3.2.33"
     }
